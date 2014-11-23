@@ -1,4 +1,4 @@
 led-canvas-matrix
 =================
 
-Matrix Class providing basic data structures for led-canvas and led-canvas-text
+Generate text matrices compatible with led-canvas
