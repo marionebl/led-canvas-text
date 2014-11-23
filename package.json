@@ -1,0 +1,36 @@
+{
+  "name": "led-canvas-text",
+  "version": "0.0.1",
+  "description": "Generate text matrices compatible with led-canvas",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "postpublish": "npm run reset",
+    "reset": "rm -r ./lib",
+    "build": "6to5 ./src --out-dir ./lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marionebl/led-canvas-text.git"
+  },
+  "keywords": [
+    "led",
+    "canvas",
+    "led-board"
+  ],
+  "author": "Mario Nebl <hello@mario-nebl.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marionebl/led-canvas-text/issues"
+  },
+  "homepage": "https://github.com/marionebl/led-canvas-text",
+  "devDependencies": {
+    "6to5": "^1.9.10"
+  },
+  "dependencies": {
+    "led-canvas-matrix": "0.0.1"
+  }
+}
